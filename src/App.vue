@@ -2,12 +2,13 @@
 import hello from './components/hello.vue';
 import contador from './components/contador.vue';
 import contadorInput from './components/contadorInput.vue';
+import listaDeTarefas from './components/listaDeTarefas.vue';
 
 </script>
 
 <template>
   <div class="cont">
-   <contadorInput/>
+   <listaDeTarefas/>
   </div>
 
 
