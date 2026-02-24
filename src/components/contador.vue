@@ -4,13 +4,16 @@ import {ref} from 'vue';
 const contador = ref(0);
 
 const ac = (() => {
+  if(contador.value < 10){
     contador.value++
-})
+  }})
+
 const dc = (() => {
     if (contador.value > 0) {
         contador.value--
     }
 })
+
 </script>
 
 <template>
@@ -19,8 +22,8 @@ const dc = (() => {
       </div>
   
       <div class="Db">
-        <button @click="ac" class="btn">acrescentar</button>
-        <button @click="dc" class="btn">decrementar</button>
+        <button @click="ac"  class="btn">acrescentar</button>
+        <button @click="dc"  class="btn">decrementar</button>
       </div>
   </template>
   
@@ -60,6 +63,7 @@ const dc = (() => {
     background-color: #369870;
     transform: scale(1.05);
   }
+
 
   </style>
   

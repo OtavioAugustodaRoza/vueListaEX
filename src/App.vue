@@ -8,7 +8,7 @@ import listaDeTarefas from './components/listaDeTarefas.vue';
 
 <template>
   <div class="cont">
-   <listaDeTarefas/>
+   <contador/>
   </div>
 
 
